@@ -1,0 +1,4 @@
+****'next/navigation'****
+useSearchParams -> Query Params Get Data
+useParams -> Params Get Data
+usePathname -> To get the path name of the URL

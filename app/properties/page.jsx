@@ -1,9 +1,12 @@
-import React from 'react'
+import Link from "next/link";
 
 const PropertiesPage = () => {
-  return (
-    <div>PropertiesPage</div>
-  )
-}
+	return (
+		<div>
+      <h1>PropertiesPage</h1>
+      <Link href='/'>Go Home</Link>
+		</div>
+	);
+};
 
-export default PropertiesPage
+export default PropertiesPage;
