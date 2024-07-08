@@ -213,7 +213,7 @@ const Navbar = () => {
 										<button
 											onClick={() => {
 												setIsProfileMenuOpen(false);
-												signOut();
+												signOut({ callbackUrl: '/', redirect: true });
 											}}
 											className='block px-4 py-2 text-sm text-gray-700'
 											role='menuitem'
