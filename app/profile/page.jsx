@@ -35,13 +35,13 @@ const ProfilePage = () => {
 				);
 
 				setProperties(updatedProperties);
-				toast.success('Property Deleted');
+				toast.success('Property Deleted', { hideProgressBar: true });
 			} else {
-				toast.error('Failed to delete Property');
+				toast.error('Failed to delete Property', { hideProgressBar: true });
 			}
 		} catch (error) {
 			console.log(error);
-			toast.error('Failed to delete Property');
+			toast.error('Failed to delete Property', { hideProgressBar: true });
 		}
 	};
 

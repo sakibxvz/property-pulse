@@ -3,27 +3,26 @@ import { FaExclamationTriangle } from 'react-icons/fa';
 
 const NotFoundPage = () => {
 	return (
-		<section className='bg-blue-50 min-h-screen flex-grow'>
-			<div className='container m-auto max-w-2xl py-24'>
-				<div className='bg-white px-6 py-24 mb-4 shadow-md rounded-md border m-4 md:m-0'>
-					<div className='flex justify-center'>
-						<FaExclamationTriangle className='fas fa-exclamation-triangle fa-5x text-8xl text-yellow-400' />
-					</div>
-					<div className='text-center'>
-						<h1 className='text-3xl font-bold mt-4 mb-2'>Page Not Found</h1>
-						<p className='text-gray-500 text-xl mb-10'>
-							The page you are looking for does not exist.
-						</p>
-						<Link
-							href='/'
-							className='bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded'
-						>
-							Go Home
-						</Link>
-					</div>
+		<section className='flex items-center h-full p-16 dark:bg-gray-50 dark:text-gray-800'>
+			<div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
+				<div className='max-w-md text-center'>
+					<h2 className='mb-8 font-extrabold text-9xl dark:text-gray-400'>
+						<span className='sr-only'>Error</span>404
+					</h2>
+					<p className='text-2xl font-semibold md:text-3xl'>
+						Sorry, we couldn't find this page.
+					</p>
+					<p className='mt-4 mb-8 dark:text-gray-600'>
+						But dont worry, you can find plenty of other things on our homepage.
+					</p>
+					<Link
+						href='/'
+						className='bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded'
+					>
+						Go Home
+					</Link>
 				</div>
 			</div>
-			<div className='flex-grow'></div>
 		</section>
 	);
 };

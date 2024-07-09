@@ -6,8 +6,10 @@ import {
 	FaRuler,
 	FaTimes,
 } from 'react-icons/fa';
+import PropertyMap from './PropertyMap';
 
 const PropertyDetails = ({ property }) => {
+	const map = { lat: '23.8041', lng: '90.4152' };
 	return (
 		<main>
 			<div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
@@ -92,7 +94,9 @@ const PropertyDetails = ({ property }) => {
 				</ul>
 			</div>
 			<div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-				<div id='map'></div>
+				<div id='map'>
+					<PropertyMap map={map } />
+				</div>
 			</div>
 		</main>
 	);
