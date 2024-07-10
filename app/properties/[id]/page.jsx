@@ -36,7 +36,7 @@ const PropertyPage = () => {
 
 	if (!property && !loading) {
 		return (
-			<h1 className='text-xenter text-2xl font-bold mt-10'>
+			<h1 className='text-center text-2xl font-bold mt-10'>
 				Property Not Found
 			</h1>
 		);
