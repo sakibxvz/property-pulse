@@ -20,7 +20,6 @@ const PropertiesPage = async () => {
 					</div>
 				)}
 			</div>
-			{console.log(properties)}
 		</section>
 	);
 };

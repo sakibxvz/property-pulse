@@ -18,7 +18,7 @@ const MainLayout = ({ children }) => {
 					<Navbar />
 					<main>{children}</main>
 					<Footer />
-					<ToastContainer />
+					<ToastContainer hideProgressBar={true} />
 				</body>
 			</html>
 		</AuthProvider>
