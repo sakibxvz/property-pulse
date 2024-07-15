@@ -9,8 +9,13 @@ const MessageSchema = new Schema(
 		},
 		recipient: {
 			type: Schema.Types.ObjectId,
-			ref: 'Property',
+			ref: 'User',
 			require: true,
+		},
+		property: {
+			type: Schema.Types.ObjectId,
+			ref: 'Property',
+			required: true,
 		},
 		name: {
 			type: String,
